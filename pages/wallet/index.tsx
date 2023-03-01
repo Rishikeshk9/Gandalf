@@ -1,8 +1,14 @@
+// @ts-ignore
+
 import Toast from "@/components/toast";
 import React, { useState, useEffect } from "react";
 import Navbar from "../../components/navbar";
 import axios from "axios";
+// @ts-ignore
+
 import * as fcl from "@onflow/fcl";
+// @ts-ignore
+
 import { query, config } from "@onflow/fcl";
 
 fcl
