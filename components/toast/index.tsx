@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+// @ts-ignore
+
 import * as Unicons from "@iconscout/react-unicons";
 
 function Index({
