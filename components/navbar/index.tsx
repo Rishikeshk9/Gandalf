@@ -60,8 +60,11 @@ function index() {
           </ul>
         </div>
 
-        <Link className="btn btn-ghost normal-case text-xl" href="/">
-          🧙‍♂️Gandalf
+        <Link
+          className="btn btn-ghost normal-case text-xl text-primary font-bold"
+          href="/"
+        >
+          Gandalf
         </Link>
       </div>
       <div className="navbar-center hidden md:flex">

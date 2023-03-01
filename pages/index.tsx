@@ -13,17 +13,19 @@ export default function Home() {
       <Navbar />
       <div className="flex flex-col align-middle items-center text-center">
         <div className="mt-36 text-4xl">
-          <strong>🧙‍♂️Gandalf</strong> is the Protocol Layer for storing Data{" "}
-          <br></br>
-          Encrypted & Securely on Flow Blockchain.
+          <strong className="text-primary">🧙‍♂️Gandalf</strong> is the Protocol
+          Layer for storing Data <br></br>
+          Securely on Flow Blockchain.
         </div>
-
+        <div className="mt-3 text-lg">
+          Speed up your Dapp Development using Gandalf
+        </div>
         <Link
           href="/dashboard"
-          className="btn btn-active btn-pri
+          className="btn btn-active btn-primary
         mt-6"
         >
-          Get API Key
+          Get API Key 🚀
         </Link>
       </div>
     </>

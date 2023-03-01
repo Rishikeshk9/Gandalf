@@ -265,13 +265,13 @@ function Index() {
         toastShow={toastShow}
       />
 
-      <div className="  grid grid-cols-2 ">
+      <div className="  grid grid-cols-1 ">
         {userDetails ? (
           <>
             <div className="flex flex-col   justify-center align-middle items-center  p-5 gap-y-2 ">
               {!data?.apiKey ? (
                 <>
-                  <div className="bg-base-300 p-7 rounded-xl space-y-4 w-full sm:w-2/3 md:w-1/3 drop-shadow-md transition-all duration-200 hover:border-b-2   border-purple-700   ">
+                  <div className="bg-base-300 p-7 rounded-xl space-y-4 w-full sm:w-2/3 md:w-1/3 drop-shadow-md transition-all duration-200 hover:border-b-2   border-secondary-700   ">
                     <div className="w-full">
                       <label className="label">
                         <span className="label-text">What is your Name?</span>
@@ -307,7 +307,7 @@ function Index() {
                             loading
                               ? "loading"
                               : "" || (formData?.name && formData?.mail)
-                              ? "btn-active btn-primary"
+                              ? "btn-active btn-secondary"
                               : "btn-outline btn-disabled"
                           }
                 }`}
@@ -320,7 +320,7 @@ function Index() {
                         </button>
                       ) : (
                         <button
-                          className="btn btn-active btn-primary"
+                          className="btn btn-active btn-secondary"
                           onClick={async () => await connect()}
                         >
                           {connectedWallet ? connectedWallet : "Connect Wallet"}
@@ -512,6 +512,11 @@ function Index() {
             </div>
           </>
         ) : null}
+      </div>
+
+      <div className="flex flex-col items-center font-bold text-xl">
+        👛Sample Wallet App
+        <p className="text-sm font-light">Powered by Gandalf</p>
       </div>
     </>
   );
